@@ -1,0 +1,7 @@
+name: room_monitor_server
+
+environment:
+  sdk: '>=2.10.0 <3.0.0'
+
+dependencies:
+  grpc: ^3.0.2

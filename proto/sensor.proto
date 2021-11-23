@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message Params {
+  float temp = 1;
+  float hum = 2;
+  float press = 3;
+  float co2 = 4;
+}
+
+message Empty {}
+
+service Sensor {
+  rpc getParams(Empty) returns (Params) {}
+}
